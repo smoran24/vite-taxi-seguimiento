@@ -1,0 +1,6 @@
+@import "leaflet/dist/leaflet.css";
+
+/*tamaño container del mapa*/
+.leaflet-container{
+  height: 97vh; 
+} 
