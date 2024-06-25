@@ -13,8 +13,7 @@ const ChatComponent = () => {
     // Función para conectar y configurar el WebSocket
     const connectWebSocket = () => {
       const stompClient = new Client({
-        webSocketFactory: () => new WebSocket('ws://localhost:8080/websocket')
-        //webSocketFactory: () => new WebSocket('ws://chat-80hl.onrender.com/websocket')
+        webSocketFactory: () => new WebSocket('ws://java-taxi-seguimiento.onrender.com/websocket')
       });
 
       stompClient.onConnect = () => {

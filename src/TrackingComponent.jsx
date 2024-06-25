@@ -21,7 +21,7 @@ const TrackingComponent = () => {
 
   useEffect(() => {
     const cliente = new Client({
-      brokerURL: 'ws://localhost:8080/websocket'
+      brokerURL: 'ws://java-taxi-seguimiento.onrender.com/websocket'
     });
     cliente.onConnect = () => {
       //console.log('Conectado');
