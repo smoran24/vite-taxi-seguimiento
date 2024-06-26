@@ -14,6 +14,7 @@ const ChatComponent = () => {
     const connectWebSocket = () => {
       const stompClient = new Client({
         webSocketFactory: () => new WebSocket('wss://java-taxi-seguimiento.onrender.com/websocket')
+        //webSocketFactory: () => new WebSocket('ws://localhost:8080/websocket')
       });
 
       stompClient.onConnect = () => {
